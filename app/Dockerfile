@@ -33,6 +33,6 @@ WORKDIR /home/www/public_html/laravel
 CMD ["sh", "-c", "/usr/bin/mysqld_safe --datadir='/var/lib/mysql' & sleep 1 && mysql -u root < /setup.sql && php artisan migrate & php-fpm & nginx -g 'daemon off;'"]
 
 
-
+ 
 #ls -l /var/lib/mysql/mysql.sock
 #ls -ld /run/php-fpm
